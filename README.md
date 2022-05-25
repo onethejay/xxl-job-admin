@@ -16,7 +16,7 @@ Executor로 등록된 API 서버의 Scheduler 관리를 도와줍니다.
 - <a href="https://www.xuxueli.com/" target="_blank">XXL-JOB</a>
 - <a href="https://github.com/xuxueli" target="_blank">XXL Github</a>
 
---------------------------------------------------------------------- 이하 Original README -------------------------------------------------------------------------------
+--------------------------------------------- 이하 Original README ---------------------------------------------
 
 <p align="center" >
     <img src="https://www.xuxueli.com/doc/static/xxl-job/images/xxl-logo.jpg" width="150">
