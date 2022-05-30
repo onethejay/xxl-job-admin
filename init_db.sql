@@ -101,7 +101,7 @@ CREATE TABLE `xxl_job_user` (
                                 `username` varchar(50) NOT NULL COMMENT '로그인 ID',
                                 `password` varchar(50) NOT NULL COMMENT '비밀번호',
                                 `role` tinyint(4) NOT NULL COMMENT '사용자 구분, 0-일반사용자, 1-관리자',
-                                `permission` varchar(255) DEFAULT NULL COMMENT '권한, 작업그룹ID 쉼표로 구분하여 여러개 등록 가능',
+                                `permission` varchar(255) DEFAULT NULL COMMENT '권한, 작업 그룹 ID 쉼표로 구분하여 여러개 등록 가능',
                                 PRIMARY KEY (`id`),
                                 UNIQUE KEY `i_username` (`username`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
