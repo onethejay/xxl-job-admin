@@ -230,7 +230,7 @@ $(function () {
 
     var id = $(this).parents('ul').attr("_id");
 
-    layer.confirm(I18n.system_ok + typeName + '?', {
+    layer.confirm(I18n.system_ok + ' ' + typeName + '?', {
       icon: 3,
       title: I18n.system_tips,
       btn: [I18n.system_ok, I18n.system_cancel]
