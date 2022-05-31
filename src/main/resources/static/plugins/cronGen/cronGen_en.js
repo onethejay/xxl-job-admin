@@ -12,13 +12,13 @@
       var cronContainer = $("<div/>", {id: "CronContainer", style: "display:none;width:300px;height:300px;"});
       var mainDiv = $("<div/>", {id: "CronGenMainDiv", style: "width:410px;height:420px;"});
       var topMenu = $("<ul/>", {"class": "nav nav-tabs", id: "CronGenTabs"});
-      $('<li/>', {'class': 'active'}).html($('<a id="SecondlyTab" href="#Secondly">秒</a>')).appendTo(topMenu);
-      $('<li/>').html($('<a id="MinutesTab" href="#Minutes">Minute</a>')).appendTo(topMenu);
-      $('<li/>').html($('<a id="HourlyTab" href="#Hourly">Hour</a>')).appendTo(topMenu);
-      $('<li/>').html($('<a id="DailyTab" href="#Daily">Day</a>')).appendTo(topMenu);
-      $('<li/>').html($('<a id="MonthlyTab" href="#Monthly">Month</a>')).appendTo(topMenu);
-      $('<li/>').html($('<a id="WeeklyTab" href="#Weekly">Week</a>')).appendTo(topMenu);
-      $('<li/>').html($('<a id="YearlyTab" href="#Yearly">Year</a>')).appendTo(topMenu);
+      $('<li/>', {'class': 'active'}).html($('<a id="SecondlyTab" href="#Secondly">초</a>')).appendTo(topMenu);
+      $('<li/>').html($('<a id="MinutesTab" href="#Minutes">분</a>')).appendTo(topMenu);
+      $('<li/>').html($('<a id="HourlyTab" href="#Hourly">시</a>')).appendTo(topMenu);
+      $('<li/>').html($('<a id="DailyTab" href="#Daily">일</a>')).appendTo(topMenu);
+      $('<li/>').html($('<a id="MonthlyTab" href="#Monthly">월</a>')).appendTo(topMenu);
+      $('<li/>').html($('<a id="WeeklyTab" href="#Weekly">주</a>')).appendTo(topMenu);
+      $('<li/>').html($('<a id="YearlyTab" href="#Yearly">년</a>')).appendTo(topMenu);
       $(topMenu).appendTo(mainDiv);
 
       //create what's inside the tabs
