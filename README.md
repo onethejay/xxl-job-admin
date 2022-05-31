@@ -3,7 +3,7 @@ Spring Scheduler 관리 어드민입니다.
 Executor로 등록된 API 서버의 Scheduler 관리를 도와줍니다.  
 소스에서 @Scheduler 어노테이션으로 작업하던 메서드를 어드민에서 관리가 가능해집니다.   
 
-가이드는 블로그에 작성중입니다. <a href="https://onethejay.tistory.com/114" target="_blank">바로가기</a>
+가이드는 블로그에 작성중입니다. <a href="https://onethejay.tistory.com/119" target="_blank">바로가기</a>
 
 ## History
 - 2022-05-26
