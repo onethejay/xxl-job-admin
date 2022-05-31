@@ -2,7 +2,7 @@ $(function () {
 
   // logout
   $("#logoutBtn").click(function () {
-    : I18n.logout_confirm, {
+    layer.confirm(I18n.logout_confirm, {
       icon: 3,
       title: I18n.system_tips,
       btn: [I18n.system_ok, I18n.system_cancel]
