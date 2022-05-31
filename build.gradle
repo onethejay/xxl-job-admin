@@ -19,7 +19,7 @@ dependencies {
             'org.springframework.boot:spring-boot-starter-freemarker',
             'org.springframework.boot:spring-boot-starter-mail',    // mail-starter
             'org.springframework.boot:spring-boot-starter-actuator',        //starter-actuator
-            'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2',    //mybatis-starter：mybatis + mybatis-spring + hikari（default）
+            'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2',    //mybatis-starter: mybatis + mybatis-spring + hikari（default）
             'mysql:mysql-connector-java:8.0.29',    //mysql
             'com.xuxueli:xxl-job-core:2.3.1'    //xxl-job-core
     )

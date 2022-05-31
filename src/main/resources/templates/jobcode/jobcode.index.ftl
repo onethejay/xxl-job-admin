@@ -51,7 +51,7 @@
                             <ul class="dropdown-menu" role="menu">
                                 <li <#if jobLogGlues?exists && jobLogGlues?size gt 0 >style="display: none;"</#if> >
                                     <a href="javascript:;" class="source_version" version="version_now" glueType="${jobInfo.glueType}">
-                                        <#list GlueTypeEnum as item><#if item == jobInfo.glueType>${item.desc}</#if></#list>： ${jobInfo.glueRemark}
+                                        <#list GlueTypeEnum as item><#if item == jobInfo.glueType>${item.desc}</#if></#list>:  ${jobInfo.glueRemark}
                                     </a>
                                 </li>
                                 <textarea id="version_now" style="display:none;">${jobInfo.glueSource}</textarea>
@@ -59,7 +59,7 @@
                                     <#list jobLogGlues as glue>
                                         <li>
                                             <a href="javascript:;" class="source_version" version="version_${glue.id}" glueType="${glue.glueType}">
-                                                <#list GlueTypeEnum as item><#if item == glue.glueType>${item.desc}</#if></#list>： ${glue.glueRemark}
+                                                <#list GlueTypeEnum as item><#if item == glue.glueType>${item.desc}</#if></#list>:  ${glue.glueRemark}
                                             </a>
                                         </li>
                                         <textarea id="version_${glue.id}" style="display:none;">${glue.glueSource}</textarea>

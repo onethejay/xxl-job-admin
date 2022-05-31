@@ -27,8 +27,8 @@
             <div class="row">
                 <div class="col-xs-3">
                     <div class="input-group">
-                        <span class="input-group-addon">AppName</span>
-                        <input type="text" class="form-control" id="appname" placeholder="AppName${I18n.system_please_input}">
+                        <span class="input-group-addon">Executor 이름</span>
+                        <input type="text" class="form-control" id="appname" placeholder="Executor 이름${I18n.system_please_input}">
                     </div>
                 </div>
                 <div class="col-xs-3">
@@ -53,7 +53,7 @@
                                 <thead>
                                 <tr>
                                     <th name="id">ID</th>
-                                    <th name="appname">AppName</th>
+                                    <th name="appname">Executor 이름</th>
                                     <th name="title">${I18n.jobgroup_field_title}</th>
                                     <th name="addressType">${I18n.jobgroup_field_addressType}</th>
                                     <th name="registryList">OnLine ${I18n.jobgroup_field_registryList}</th>
@@ -80,8 +80,8 @@
                 <div class="modal-body">
                     <form class="form-horizontal form" role="form">
                         <div class="form-group">
-                            <label for="lastname" class="col-sm-2 control-label">AppName<font color="red">*</font></label>
-                            <div class="col-sm-10"><input type="text" class="form-control" name="appname" placeholder="AppName${I18n.system_please_input}" maxlength="64"></div>
+                            <label for="lastname" class="col-sm-2 control-label">Executor 이름<font color="red">*</font></label>
+                            <div class="col-sm-10"><input type="text" class="form-control" name="appname" placeholder="Executor 이름${I18n.system_please_input}" maxlength="64"></div>
                         </div>
                         <div class="form-group">
                             <label for="lastname" class="col-sm-2 control-label">${I18n.jobgroup_field_title}<font color="red">*</font></label>
@@ -126,8 +126,8 @@
                 <div class="modal-body">
                     <form class="form-horizontal form" role="form">
                         <div class="form-group">
-                            <label for="lastname" class="col-sm-2 control-label">AppName<font color="red">*</font></label>
-                            <div class="col-sm-10"><input type="text" class="form-control" name="appname" placeholder="AppName${I18n.system_please_input}" maxlength="64"></div>
+                            <label for="lastname" class="col-sm-2 control-label">Executor 이름<font color="red">*</font></label>
+                            <div class="col-sm-10"><input type="text" class="form-control" name="appname" placeholder="Executor 이름${I18n.system_please_input}" maxlength="64"></div>
                         </div>
                         <div class="form-group">
                             <label for="lastname" class="col-sm-2 control-label">${I18n.jobgroup_field_title}<font color="red">*</font></label>

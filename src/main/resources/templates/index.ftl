@@ -66,7 +66,7 @@
                             <span class="progress-description">
                                 ${I18n.job_dashboard_trigger_num_tip}
                                 <#--<#if jobLogCount gt 0>
-                                    调度成功率：${(jobLogSuccessCount*100/jobLogCount)?string("0.00")}<small>%</small>
+                                    调度成功率: ${(jobLogSuccessCount*100/jobLogCount)?string("0.00")}<small>%</small>
                                 </#if>-->
                             </span>
                         </div>
@@ -92,7 +92,7 @@
 
             </div>
 
-            <#-- 调度报表：时间区间筛选，左侧折线图 + 右侧饼图 -->
+            <#-- 调度报表: 时间区间筛选，左侧折线图 + 右侧饼图 -->
             <div class="row">
                 <div class="col-md-12">
                     <div class="box">

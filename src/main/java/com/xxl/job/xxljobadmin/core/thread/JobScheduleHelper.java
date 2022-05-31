@@ -85,7 +85,7 @@ public class JobScheduleHelper {
 
                                 // time-ring jump
                                 if (nowTime > jobInfo.getTriggerNextTime() + PRE_READ_MS) {
-                                    // 2.1、trigger-expire > 5s：pass && make next-trigger-time
+                                    // 2.1、trigger-expire > 5s: pass && make next-trigger-time
                                     logger.warn(">>>>>>>>>>> xxl-job, schedule misfire, jobId = " + jobInfo.getId());
 
                                     // 1、misfire match
@@ -100,7 +100,7 @@ public class JobScheduleHelper {
                                     refreshNextValidTime(jobInfo, new Date());
 
                                 } else if (nowTime > jobInfo.getTriggerNextTime()) {
-                                    // 2.2、trigger-expire < 5s：direct-trigger && make next-trigger-time
+                                    // 2.2、trigger-expire < 5s: direct-trigger && make next-trigger-time
 
                                     // 1、trigger
                                     JobTriggerPoolHelper.trigger(jobInfo.getId(), TriggerTypeEnum.CRON, -1, null, null, null);
@@ -124,7 +124,7 @@ public class JobScheduleHelper {
                                     }
 
                                 } else {
-                                    // 2.3、trigger-pre-read：time-ring trigger && make next-trigger-time
+                                    // 2.3、trigger-pre-read: time-ring trigger && make next-trigger-time
 
                                     // 1、make ring second
                                     int ringSecond = (int) ((jobInfo.getTriggerNextTime() / 1000) % 60);

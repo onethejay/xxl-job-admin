@@ -111,7 +111,7 @@ $(function () {
   $("#user_list").on('click', '.delete', function () {
     var id = $(this).parent('p').attr("id");
 
-    layer.confirm(I18n.system_ok + I18n.system_opt_del + '?', {
+    layer.confirm(I18n.system_ok + ' ' + I18n.system_opt_del + '?', {
       icon: 3,
       title: I18n.system_tips,
       btn: [I18n.system_ok, I18n.system_cancel]
@@ -176,11 +176,11 @@ $(function () {
     messages: {
       username: {
         required: I18n.user_username + I18n.system_please_input,
-        rangelength: I18n.system_length_limit + "[4-20]"
+        rangelength: I18n.system_length_limit + " [4-20]"
       },
       password: {
         required: I18n.user_password + I18n.system_please_input,
-        rangelength: I18n.system_length_limit + "[4-20]"
+        rangelength: I18n.system_length_limit + " [4-20]"
       }
     },
     highlight: function (element) {

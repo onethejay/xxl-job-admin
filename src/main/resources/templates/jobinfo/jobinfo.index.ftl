@@ -248,7 +248,7 @@
 
                     <hr>
                     <div class="form-group">
-                        <div class="col-sm-offset-3 col-sm-6">
+                        <div class="col-sm-offset-3 col-sm-6" style="text-align: center;">
                             <button type="submit" class="btn btn-primary">${I18n.system_save}</button>
                             <button type="button" class="btn btn-default" data-dismiss="modal">${I18n.system_cancel}</button>
                         </div>
@@ -275,11 +275,11 @@ public class DemoGlueJobHandler extends IJobHandler {
 #!/bin/bash
 echo "xxl-job: hello shell"
 
-echo "${I18n.jobinfo_script_location}：$0"
-echo "${I18n.jobinfo_field_executorparam}：$1"
+echo "${I18n.jobinfo_script_location}: $0"
+echo "${I18n.jobinfo_field_executorparam}: $1"
 echo "${I18n.jobinfo_shard_index} = $2"
 echo "${I18n.jobinfo_shard_total} = $3"
-<#--echo "参数数量：$#"
+<#--echo "参数数量: $#"
 for param in $*
 do
     echo "参数 : $param"
@@ -297,10 +297,10 @@ import sys
 
 print "xxl-job: hello python"
 
-print "${I18n.jobinfo_script_location}：", sys.argv[0]
-print "${I18n.jobinfo_field_executorparam}：", sys.argv[1]
-print "${I18n.jobinfo_shard_index}：", sys.argv[2]
-print "${I18n.jobinfo_shard_total}：", sys.argv[3]
+print "${I18n.jobinfo_script_location}: ", sys.argv[0]
+print "${I18n.jobinfo_field_executorparam}: ", sys.argv[1]
+print "${I18n.jobinfo_shard_index}: ", sys.argv[2]
+print "${I18n.jobinfo_shard_total}: ", sys.argv[3]
 <#--for i in range(1, len(sys.argv)):
 	time.sleep(1)
 	print "参数", i, sys.argv[i]-->
@@ -310,7 +310,7 @@ exit(0)
 <#--
 import logging
 logging.basicConfig(level=logging.DEBUG)
-logging.info("脚本文件：" + sys.argv[0])
+logging.info("脚本文件: " + sys.argv[0])
 -->
 </textarea>
                     <#--这里有问题，新建一个运行模式为 php 的任务后，GLUE 中没有下边的 php 代码-->
@@ -319,8 +319,8 @@ logging.info("脚本文件：" + sys.argv[0])
 
     echo "xxl-job: hello php  \n";
 
-    echo "${I18n.jobinfo_script_location}：$argv[0]  \n";
-    echo "${I18n.jobinfo_field_executorparam}：$argv[1]  \n";
+    echo "${I18n.jobinfo_script_location}: $argv[0]  \n";
+    echo "${I18n.jobinfo_field_executorparam}: $argv[1]  \n";
     echo "${I18n.jobinfo_shard_index} = $argv[2]  \n";
     echo "${I18n.jobinfo_shard_total} = $argv[3]  \n";
 

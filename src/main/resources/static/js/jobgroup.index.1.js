@@ -144,7 +144,7 @@ $(function () {
   $("#jobgroup_list").on('click', '.opt_del', function () {
     var id = $(this).parents('ul').attr("_id");
 
-    layer.confirm((I18n.system_ok + I18n.jobgroup_del + '？'), {
+    layer.confirm((I18n.system_ok + ' ' + I18n.jobgroup_del + '？'), {
       icon: 3,
       title: I18n.system_tips,
       btn: [I18n.system_ok, I18n.system_cancel]

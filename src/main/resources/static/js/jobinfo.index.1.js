@@ -54,7 +54,7 @@ $(function () {
         "width": '13%',
         "render": function (data, type, row) {
           if (row.scheduleConf) {
-            return row.scheduleType + '：' + row.scheduleConf;
+            return row.scheduleType + ': ' + row.scheduleConf;
           } else {
             return row.scheduleType;
           }
@@ -67,7 +67,7 @@ $(function () {
         "render": function (data, type, row) {
           var glueTypeTitle = findGlueTypeTitle(row.glueType);
           if (row.executorHandler) {
-            return glueTypeTitle + "：" + row.executorHandler;
+            return glueTypeTitle + ": " + row.executorHandler;
           } else {
             return glueTypeTitle;
           }

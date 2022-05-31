@@ -100,13 +100,13 @@ $(function () {
 
           var jobhandler = '';
           if (row.executorHandler) {
-            jobhandler = "<br>JobHandler：" + row.executorHandler;
+            jobhandler = "<br>JobHandler: " + row.executorHandler;
           }
 
           var temp = '';
-          temp += I18n.joblog_field_executorAddress + '：' + (row.executorAddress ? row.executorAddress : '');
+          temp += I18n.joblog_field_executorAddress + ': ' + (row.executorAddress ? row.executorAddress : '');
           temp += jobhandler;
-          temp += '<br>' + I18n.jobinfo_field_executorparam + '：' + row.executorParam;
+          temp += '<br>' + I18n.jobinfo_field_executorparam + ': ' + row.executorParam;
 
           return '<a class="logTips" href="javascript:;" >' + row.jobId + '<span style="display:none;">' + temp + '</span></a>';
         }
@@ -268,7 +268,7 @@ $(function () {
   $('#joblog_list').on('click', '.logKill', function () {
     var _id = $(this).attr('_id');
 
-    layer.confirm((I18n.system_ok + I18n.joblog_kill_log + '?'), {
+    layer.confirm((I18n.system_ok + ' ' + I18n.joblog_kill_log + '?'), {
       icon: 3,
       title: I18n.system_tips,
       btn: [I18n.system_ok, I18n.system_cancel]
