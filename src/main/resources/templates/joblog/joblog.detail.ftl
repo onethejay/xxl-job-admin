@@ -31,8 +31,8 @@
                 <div class="navbar-custom-menu">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="javascript:window.location.reload();" >
-                                <i class="fa fa-fw fa-refresh" ></i>
+                            <a href="javascript:window.location.reload();">
+                                <i class="fa fa-fw fa-refresh"></i>
                                 ${I18n.joblog_rolling_log_refresh}
                             </a>
                         </li>
@@ -43,11 +43,11 @@
         </nav>
     </header>
 
-    <div class="content-wrapper" >
+    <div class="content-wrapper">
         <section class="content">
-            <pre style="font-size:12px;position:relative;" >
+            <pre style="font-size:12px;position:relative;">
                 <div id="logConsole"></div>
-                <li class="fa fa-refresh fa-spin" style="font-size: 20px;float: left;" id="logConsoleRunning" ></li>
+                <li class="fa fa-refresh fa-spin" style="font-size: 20px;float: left;" id="logConsoleRunning"></li>
             </pre>
         </section>
     </div>
@@ -59,12 +59,12 @@
 
 <@netCommon.commonScript />
 <script>
-    // 参数
-    var triggerCode = '${triggerCode}';
-    var handleCode = '${handleCode}';
-    var executorAddress = '${executorAddress!}';
-    var triggerTime = '${triggerTime?c}';
-    var logId = '${logId}';
+  // 参数
+  var triggerCode = '${triggerCode}';
+  var handleCode = '${handleCode}';
+  var executorAddress = '${executorAddress!}';
+  var triggerTime = '${triggerTime?c}';
+  var logId = '${logId}';
 </script>
 <script src="${request.contextPath}/static/js/joblog.detail.1.js"></script>
 
