@@ -12,6 +12,7 @@ Executor로 등록된 API 서버의 Scheduler 관리를 도와줍니다.
   - message 일부를 한글로 변경하였습니다. (계속 작업할 예정입니다.)
 
 ## 참고
+해당 프로젝트는 XXL-JOB 프로젝트를 기반으로 합니다.
 서비스 혹은 소스에 대한 자세한 사항은 공식 사이트를 참고해주시기 바랍니다. (영어, 중국어)
 > XXL-JOB Official Site
 - <a href="https://www.xuxueli.com/" target="_blank">XXL-JOB</a>
