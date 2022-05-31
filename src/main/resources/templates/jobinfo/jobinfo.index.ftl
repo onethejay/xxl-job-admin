@@ -105,7 +105,7 @@
     <@netCommon.commonFooter />
 </div>
 
-<!-- job新增.模态框 -->
+<!-- job모달 박스 -->
 <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
