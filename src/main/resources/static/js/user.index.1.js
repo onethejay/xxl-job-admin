@@ -111,7 +111,7 @@ $(function () {
   $("#user_list").on('click', '.delete', function () {
     var id = $(this).parent('p').attr("id");
 
-    layer.confirm(I18n.system_ok + ' ' + I18n.system_opt_del + '?', {
+    layer.confirm(I18n.system_opt_del + ' ' + I18n.system_ok + '?', {
       icon: 3,
       title: I18n.system_tips,
       btn: [I18n.system_ok, I18n.system_cancel]
