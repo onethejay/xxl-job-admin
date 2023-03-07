@@ -186,7 +186,7 @@
                             </select>
                         </div>
                         <label for="firstname" class="col-sm-2 control-label">JobHandler<font color="red">*</font></label>
-                        <div class="col-sm-4"><input type="text" class="form-control" name="executorHandler" placeholder="JobHandler${I18n.system_please_input}" maxlength="100">
+                        <div class="col-sm-4"><input type="text" class="form-control" name="executorHandler" placeholder="실행 유형의 JobHandler${I18n.system_please_input}" maxlength="100">
                         </div>
                     </div>
 
